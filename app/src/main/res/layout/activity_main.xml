@@ -1,0 +1,75 @@
+<!-- 21ug0272 -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextBillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter Bill Amount"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTipPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextBillAmount"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio10Percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10%"/>
+
+        <RadioButton
+            android:id="@+id/radio20Percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20%"/>
+
+        <RadioButton
+            android:id="@+id/radio30Percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30%"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupTipPercentage"
+        android:layout_marginTop="16dp"
+        android:text="Calculate Tip"/>
+
+    <TextView
+        android:id="@+id/textViewTipAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCalculate"
+        android:layout_marginTop="16dp"
+        android:text="Tip Amount: LKR0.00"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="361dp"
+        android:text="21ug0272" />
+
+</RelativeLayout>
